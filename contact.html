@@ -1,36 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Request Quote | AeroTyre</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request RFQ | AeroTyre</title>
+<link rel="stylesheet" href="style.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav><a href="index.html">← Back</a></nav>
+
+<div class="aog-banner">
+🚨 24/7 AOG Emergency Tyre & Brake Support | Response Within 30 Minutes
+</div>
+
+<nav class="main-nav">
+<div class="logo">AeroTyre</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="tyres.html">Tyres</a></li>
+<li><a href="brakes.html">Brakes</a></li>
+<li><a href="aog.html" class="aog-link">AOG</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html" class="active rfq-btn">RFQ</a></li>
+</ul>
+</nav>
+
+<header class="hero">
+<h1>Request for Quotation (RFQ)</h1>
+<p>Submit Your Tyre or Brake Requirement</p>
+</header>
 
 <section class="section">
-<h2>Request For Quote (RFQ)</h2>
+<h2>RFQ Submission Form</h2>
 
-<form action="https://formspree.io/f/mdalbdqq" method="POST">
-<input type="text" name="company" placeholder="Company Name" required>
-<input type="text" name="aircraft" placeholder="Aircraft Type" required>
-<input type="text" name="partnumber" placeholder="Part Number" required>
-<input type="number" name="quantity" placeholder="Quantity" required>
-<select name="condition">
-<option>New</option>
-<option>Overhauled</option>
-<option>Serviceable</option>
-</select>
-<input type="text" name="delivery" placeholder="Delivery Location" required>
-<input type="date" name="required">
-<select name="aog">
-<option>No</option>
-<option>Yes - AOG</option>
-</select>
-<input type="email" name="email" placeholder="Email Address" required>
-<textarea name="notes" placeholder="Additional Notes"></textarea>
-<button type="submit">Submit RFQ</button>
+<form class="rfq-form">
+<input type="text" placeholder="Company Name" required>
+<input type="text" placeholder="Contact Person" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Aircraft Type (e.g., A320 / B737)" required>
+<input type="text" placeholder="Part Number" required>
+<input type="number" placeholder="Quantity" required>
+<textarea placeholder="Additional Details (Condition, Delivery Location, AOG status)" rows="4"></textarea>
+<button type="submit" class="btn">Submit RFQ</button>
 </form>
 
 </section>
+
+<section class="section dark">
+<h2>Direct Contact</h2>
+<div class="grid">
+<div>📧 sales@aerotyre.com</div>
+<div>📱 +91XXXXXXXXXX</div>
+<div>📍 Chennai, India</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 AeroTyre & Brake Solutions | Chennai, India | Serving Worldwide</p>
+</footer>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">WhatsApp</a>
+
 </body>
 </html>
