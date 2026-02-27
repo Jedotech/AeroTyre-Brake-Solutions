@@ -223,5 +223,20 @@ text-decoration:none;
 body {
     padding-top: 90px; /* adjust if header height differs */
 }
+.site-header {
+    background-color: #002b5c;
+    padding: 15px 0;
+}
+
+.site-header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.site-header a:hover {
+    color: #00aaff;
+}
 
 
