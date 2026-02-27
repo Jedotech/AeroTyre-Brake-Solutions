@@ -238,5 +238,48 @@ body {
 .site-header a:hover {
     color: #00aaff;
 }
+/* Navigation Styling */
+.main-nav {
+    background-color: #002b5c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #00aaff;
+}
+
+/* Active Menu */
+.active {
+    border-bottom: 2px solid #00aaff;
+}
+
+/* AOG Highlight */
+.aog-link {
+    background-color: #d40000;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* RFQ Button */
+.rfq-btn {
+    background-color: #00aaff;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
 
 
