@@ -211,5 +211,17 @@ text-decoration:none;
     margin-bottom: 8px;
     color: #555;
 }
+/* Fixed Header */
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Push content down so header doesn't cover it */
+body {
+    padding-top: 90px; /* adjust if header height differs */
+}
 
 
