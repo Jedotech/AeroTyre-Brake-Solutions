@@ -281,5 +281,23 @@ body {
     padding: 6px 12px;
     border-radius: 4px;
 }
+.rfq-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rfq-form input,
+.rfq-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.rfq-form button {
+    cursor: pointer;
+}
 
 
