@@ -197,3 +197,6 @@ button {
   gap: 30px;
   margin-top: 30px;
 }
+.section .grid div {
+  background: #eef2f7;  /* aviation light grey */
+}
