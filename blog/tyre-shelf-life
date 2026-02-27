@@ -2,46 +2,115 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aircraft Tyre Shelf Life & Aviation Safety | AeroTyre</title>
 <meta name="description" content="Learn how aircraft tyre shelf life affects safety, structural integrity and compliance. Expert aviation tyre sourcing guidance.">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "Article",
  "headline": "How Aircraft Tyre Shelf Life Affects Safety",
- "author": { "@type": "Organization", "name": "AeroTyre & Brake Solutions" }
+ "author": { "@type": "Organization", "name": "AeroTyre & Brake Solutions" },
+ "publisher": { "@type": "Organization", "name": "AeroTyre & Brake Solutions" }
 }
 </script>
 </head>
+
 <body>
 
-<nav><a href="blog.html">← Back to Blog</a></nav>
+<!-- AOG Banner -->
+<div class="aog-banner">
+🚨 24/7 AOG Emergency Tyre & Brake Support | Response Within 30 Minutes
+</div>
 
-<section class="section">
+<!-- Navigation -->
+<nav class="main-nav">
+<div class="logo">AeroTyre</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="tyres.html">Tyres</a></li>
+<li><a href="brakes.html">Brakes</a></li>
+<li><a href="aog.html" class="aog-link">AOG</a></li>
+<li><a href="blog.html" class="active">Blog</a></li>
+<li><a href="contact.html" class="rfq-btn">RFQ</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
 <h1>How Aircraft Tyre Shelf Life Affects Safety</h1>
+<p>Aviation Compliance | Structural Integrity | Risk Mitigation</p>
+</header>
 
-<p>Aircraft tyres are engineered to withstand extreme landing loads, temperature variations, and high-speed stress...</p>
+<!-- Article Content -->
+<section class="section">
 
-<p>We specialize in <a href="tyres.html">global aircraft tyre sourcing</a> with verified documentation and compliance support.</p>
+<p>
+Aircraft tyres are engineered to withstand extreme landing loads,
+temperature variations, and high-speed stress. However, even unused tyres
+have a defined shelf life that directly impacts operational safety.
+</p>
 
-<p>Need urgent supply? Visit our <a href="aog.html">AOG support page</a> or <a href="contact.html">submit an RFQ</a>.</p>
+<p>
+We specialize in <a href="tyres.html">global aircraft tyre sourcing</a> with verified
+manufacturing documentation and compliance support.
+</p>
+
+<p>
+Need urgent supply? Visit our <a href="aog.html">AOG support page</a>
+or <a href="contact.html">submit an RFQ</a>.
+</p>
 
 <h2>What Is Aircraft Tyre Shelf Life?</h2>
-<p>Manufacturers typically recommend maximum storage periods depending on compound type and storage condition...</p>
 
-<h2>Safety Risks</h2>
+<p>
+Aircraft tyre shelf life refers to the maximum recommended storage period
+before a tyre is mounted and placed into service. Manufacturers typically
+define limits based on rubber compound composition and environmental
+storage conditions.
+</p>
+
+<p>
+Proper storage in controlled humidity and temperature environments is
+critical to preserving structural integrity.
+</p>
+
+<h2>Safety Risks of Expired Tyres</h2>
+
 <ul>
-<li>Sidewall cracking</li>
-<li>Reduced structural integrity</li>
+<li>Sidewall cracking due to rubber degradation</li>
+<li>Reduced structural integrity under landing load</li>
 <li>Tread separation risk</li>
 <li>Increased blowout probability</li>
 </ul>
 
-<p>Need verified manufacturing dates? <a href="contact.html">Request a Tyre RFQ</a></p>
+<h2>Compliance & Traceability</h2>
+
+<p>
+Operators must ensure full traceability, manufacturing date verification,
+and certification documentation before installation.
+</p>
+
+<p>
+Need verified manufacturing dates or batch traceability?
+<a href="contact.html">Request a Tyre RFQ</a>
+</p>
+
+<div style="margin-top:40px;">
+<a href="blog.html" class="btn">← Back to Blog</a>
+</div>
 
 </section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 AeroTyre & Brake Solutions | Chennai, India | Serving Worldwide</p>
+</footer>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">WhatsApp</a>
 
 </body>
 </html>
