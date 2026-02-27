@@ -349,3 +349,25 @@ body {
 body {
   margin-top: 40px; /* prevents content hiding behind banner */
 }
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* AOG Banner */
+.aog-banner {
+  background: #c00000;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Navigation */
+.main-nav {
+  background: #0b1f3a;
+  margin: 0;
+  padding: 15px 40px;
+}
