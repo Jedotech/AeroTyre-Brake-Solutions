@@ -112,4 +112,23 @@ padding:12px 20px;
 border-radius:30px;
 color:white;
 text-decoration:none;
+
+}
+.blog-list {
+max-width:800px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+.blog-item {
+background:#111827;
+padding:20px;
+border-radius:12px;
+}
+
+.blog-item a {
+color:#00d4ff;
+text-decoration:none;
 }
