@@ -218,3 +218,7 @@ button:hover {
 .whatsapp:hover {
   background: #1ebe5d;
 }
+/* Add spacing between hero text and RFQ button */
+.hero .btn {
+  margin-top: 30px;
+}
