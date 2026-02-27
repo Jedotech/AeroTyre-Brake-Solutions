@@ -1,0 +1,115 @@
+body {
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0b1220;
+color:white;
+}
+
+nav {
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+background:#0f1a2e;
+}
+
+nav ul {
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav a {
+color:white;
+text-decoration:none;
+}
+
+.aog-banner {
+background:#b00020;
+text-align:center;
+padding:8px;
+font-weight:bold;
+}
+
+.hero {
+padding:120px 20px;
+text-align:center;
+background:linear-gradient(135deg,#001f3f,#003366);
+}
+
+.hero.small {
+padding:80px 20px;
+}
+
+.hero.red {
+background:#5a0000;
+}
+
+.btn {
+background:#00d4ff;
+padding:12px 30px;
+color:black;
+text-decoration:none;
+border-radius:30px;
+}
+
+.section {
+padding:80px 20px;
+text-align:center;
+}
+
+.dark {
+background:#111827;
+}
+
+.grid {
+display:flex;
+gap:40px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.brands {
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+font-weight:600;
+}
+
+footer {
+padding:20px;
+text-align:center;
+background:#0f1a2e;
+}
+
+form {
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea, select {
+padding:10px;
+border-radius:8px;
+border:none;
+}
+
+button {
+padding:12px;
+background:#00d4ff;
+border:none;
+border-radius:20px;
+}
+
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+padding:12px 20px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+}
