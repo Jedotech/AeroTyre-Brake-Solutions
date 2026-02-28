@@ -308,3 +308,50 @@ button:hover {
 .read-more:hover {
   text-decoration: underline;
 }
+/* =========================
+   BLOG PAGE SPACING FIX
+========================= */
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px; /* space between blog cards */
+    margin-top: 40px;
+}
+
+.blog-post {
+    background: #111827;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    border-color: #00d4ff;
+}
+
+.blog-post h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.blog-post p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
