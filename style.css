@@ -573,3 +573,20 @@ button:hover {
     color: #3b82f6;
     font-weight: 600;
 }
+.nav-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* KEY */
+}
+.logo {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 35px;
+}
