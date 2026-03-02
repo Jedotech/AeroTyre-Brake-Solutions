@@ -410,3 +410,38 @@ footer {
   }
 
 }
+/* =========================
+   JEDO AEROTECH LOGO
+========================= */
+
+.logo a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-main {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
+.logo-accent {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  color: #00D4FF;
+  margin-top: 4px;
+}
+
+/* Optional aviation line effect */
+.logo-main::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #00D4FF;
+  margin-top: 6px;
+}
