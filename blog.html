@@ -6,7 +6,7 @@
     <title>Aviation Insights | AeroTyre Blog</title>
     <meta name="description" content="Technical aviation insights covering aircraft tyres, brakes, AOG support and regulatory compliance guidance.">
     
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=7">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
@@ -16,38 +16,39 @@
 🚨 24/7 AOG Emergency Tyre & Brake Support | Response Within 30 Minutes
 </div>
 
+<!-- ================= NAVIGATION ================= -->
 <nav class="main-nav">
     <div class="nav-container">
 
-        <!-- Hamburger (LEFT) -->
+        <!-- LEFT: Hamburger -->
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <!-- Logo (CENTER on mobile) -->
-        <div class="logo">AeroTyre</div>
+        <!-- CENTER (mobile) / LEFT (desktop): Logo -->
+        <div class="logo">
+            <a href="index.html">AeroTyre</a>
+        </div>
 
-        <!-- Links -->
+        <!-- RIGHT: Menu Links -->
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="tyres.html">Tyres</a></li>
             <li><a href="brakes.html">Brakes</a></li>
             <li><a href="aog.html" class="aog-link">AOG</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
             <li><a href="contact.html" class="rfq-btn">RFQ</a></li>
         </ul>
 
     </div>
 </nav>
-
-    </div>
-</nav>
+<!-- ================= END NAV ================= -->
 
 <header class="hero small">
-<h1>Aviation Technical & Regulatory Insights</h1>
-<p>Knowledge resources for operators, MROs, leasing companies and procurement teams</p>
+    <h1>Aviation Technical & Regulatory Insights</h1>
+    <p>Knowledge resources for operators, MROs, leasing companies and procurement teams</p>
 </header>
 
 <section class="section">
@@ -123,19 +124,19 @@ class="whatsapp"
 target="_blank">
 💬 24/7 AOG
 </a>
-    <script>
+
+<!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
 document.addEventListener("DOMContentLoaded", function() {
 
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
 
-    // Toggle menu
     hamburger.addEventListener("click", function() {
         navLinks.classList.toggle("active");
         hamburger.classList.toggle("open");
     });
 
-    // Auto close menu when link clicked (mobile)
     document.querySelectorAll("#nav-links a").forEach(link => {
         link.addEventListener("click", function() {
             navLinks.classList.remove("active");
@@ -148,6 +149,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
-
-
-
