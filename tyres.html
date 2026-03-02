@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aircraft Tyres | AeroTyre</title>
-<link rel="stylesheet" href="style.css?v=2">
+
+<title>Aircraft Tyres Supply | Commercial & Business Jet | AeroTyre</title>
+<meta name="description" content="Global aircraft tyre sourcing including Michelin, Goodyear, Dunlop and Bridgestone. Commercial, cargo, regional and business jet tyre support with certified documentation.">
+
+<link rel="stylesheet" href="style.css?v=4">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,21 +19,20 @@
 <nav class="main-nav">
     <div class="nav-container">
 
-        <!-- Hamburger (LEFT) -->
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <!-- Logo (CENTER on mobile) -->
-        <div class="logo">AeroTyre</div>
+        <div class="logo">
+            <a href="index.html">AeroTyre</a>
+        </div>
 
-        <!-- Links -->
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="tyres.html">Tyres</a></li>
-            <li><a href="brakes.html">Brakes</a></li>
+            <li><a href="tyres.html" class="active">Tyres</a></li>
+            <li><a href="brakes.html" class="active">Brakes</a></li>
             <li><a href="aog.html" class="aog-link">AOG</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html" class="rfq-btn">RFQ</a></li>
@@ -40,68 +42,73 @@
 </nav>
 
 <header class="hero">
-<h1>Aircraft Tyre Supply Solutions</h1>
-<p>Commercial | Cargo | Regional | Business Jet</p>
-<a href="contact.html" class="btn">Request Tyre RFQ</a>
+    <h1>Aircraft Tyre Supply Solutions</h1>
+    <p>Commercial | Cargo | Regional | Business Jet</p>
+    <a href="contact.html" class="btn">Request Tyre RFQ</a>
 </header>
 
 <section class="section">
-<h2>Tyre Brands We Source</h2>
-<div class="grid">
-<div>
-<h3>Michelin</h3>
-<p>Radial aircraft tyres with optimized cost per landing performance.</p>
-</div>
-<div>
-<h3>Goodyear</h3>
-<p>High durability bias and radial tyre solutions.</p>
-</div>
-<div>
-<h3>Dunlop Aircraft Tyres</h3>
-<p>Certified aviation tyre systems for multiple aircraft types.</p>
-</div>
-<div>
-<h3>Bridgestone</h3>
-<p>Reliable commercial and regional aircraft tyre options.</p>
-</div>
-</div>
+    <h2>Tyre Brands We Source</h2>
+
+    <div class="grid">
+
+        <div>
+            <h3 class="brand michelin">Michelin</h3>
+            <p>Radial aircraft tyres with optimized cost-per-landing performance.</p>
+        </div>
+
+        <div>
+            <h3 class="brand goodyear">Goodyear</h3>
+            <p>High-durability bias and radial tyre solutions for global fleets.</p>
+        </div>
+
+        <div>
+            <h3 class="brand dunlop">Dunlop</h3>
+            <p>Certified aviation tyre systems for multiple aircraft platforms.</p>
+        </div>
+
+        <div>
+            <h3 class="brand bridgestone">Bridgestone</h3>
+            <p>Reliable commercial and regional aircraft tyre options.</p>
+        </div>
+
+    </div>
 </section>
 
 <section class="section dark">
-<h2>Aircraft Coverage</h2>
-<div class="grid">
-<div>B737 Family</div>
-<div>A320 Family</div>
-<div>B777</div>
-<div>A330</div>
-<div>ATR 72</div>
-<div>Business Jets</div>
-</div>
+    <h2>Aircraft Coverage</h2>
+
+    <div class="grid">
+        <div>B737 Family</div>
+        <div>A320 Family</div>
+        <div>B777</div>
+        <div>A330</div>
+        <div>ATR 72</div>
+        <div>Business Jets</div>
+    </div>
 </section>
 
 <footer>
 <p>© 2026 AeroTyre & Brake Solutions | Chennai, India | Serving Worldwide</p>
 </footer>
-   
-<!-- WHATSAPP FLOAT BUTTON -->
+
 <a href="https://wa.me/919600038089?text=Hello%20AeroTyre%20Team,%0A%0AAircraft%20Type:%0APart%20Number:%0AQuantity:%0ALocation:%0ARequired%20By:%0A%0AThis%20is%20an%20AOG:%20Yes/No"
    class="whatsapp"
    target="_blank">
 💬 24/7 AOG
 </a>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
 
-    // Toggle menu
     hamburger.addEventListener("click", function() {
         navLinks.classList.toggle("active");
         hamburger.classList.toggle("open");
     });
 
-    // Auto close menu when link clicked (mobile)
     document.querySelectorAll("#nav-links a").forEach(link => {
         link.addEventListener("click", function() {
             navLinks.classList.remove("active");
@@ -111,10 +118,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 </script>
+
 </body>
 </html>
-
-
-
-
-
