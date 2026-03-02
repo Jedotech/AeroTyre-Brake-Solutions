@@ -81,9 +81,32 @@
    target="_blank">
 💬 24/7 AOG
 </a>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    // Toggle menu
+    hamburger.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
+    });
+
+    // Auto close menu when link clicked (mobile)
+    document.querySelectorAll("#nav-links a").forEach(link => {
+        link.addEventListener("click", function() {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("open");
+        });
+    });
+
+});
+</script>
 
 
 </body>
 </html>
+
 
 
