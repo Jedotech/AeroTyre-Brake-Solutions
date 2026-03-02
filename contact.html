@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Request RFQ | AeroTyre</title>
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,53 +16,84 @@
 <nav class="main-nav">
     <div class="nav-container">
 
-        <!-- Hamburger (LEFT) -->
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <!-- Logo (CENTER on mobile) -->
         <div class="logo">AeroTyre</div>
 
-        <!-- Links -->
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="tyres.html">Tyres</a></li>
             <li><a href="brakes.html">Brakes</a></li>
             <li><a href="aog.html" class="aog-link">AOG</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html" class="rfq-btn">RFQ</a></li>
+            <li><a href="contact.html" class="rfq-btn active">RFQ</a></li>
         </ul>
 
     </div>
 </nav>
 
-<header class="hero">
-<h1>Request for Quotation (RFQ)</h1>
-<p>Submit Your Tyre or Brake Requirement</p>
+<header class="hero small">
+<h1>Request for Quotation</h1>
+<p>Submit your aircraft tyre or brake requirement</p>
 </header>
 
 <section class="section">
+
 <h2>RFQ Submission Form</h2>
 
+<div class="rfq-container">
+
 <form class="rfq-form">
-<input type="text" placeholder="Company Name" required>
-<input type="text" placeholder="Contact Person" required>
-<input type="email" placeholder="Email Address" required>
-<input type="text" placeholder="Aircraft Type (e.g., A320 / B737)" required>
-<input type="text" placeholder="Part Number" required>
-<input type="number" placeholder="Quantity" required>
-<textarea placeholder="Additional Details (Condition, Delivery Location, AOG status)" rows="4"></textarea>
+
+<div class="form-group">
+<label>Company Name</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Contact Person</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" required>
+</div>
+
+<div class="form-group">
+<label>Aircraft Type</label>
+<input type="text" placeholder="A320 / B737 / ATR72" required>
+</div>
+
+<div class="form-group">
+<label>Part Number</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>Quantity</label>
+<input type="number" required>
+</div>
+
+<div class="form-group full">
+<label>Additional Details</label>
+<textarea rows="5" placeholder="Condition, delivery location, AOG status, required date"></textarea>
+</div>
+
 <button type="submit" class="btn">Submit RFQ</button>
+
 </form>
+</div>
 
 </section>
 
 <section class="section dark">
 <h2>Direct Contact</h2>
-<div class="grid">
+<div class="grid contact-grid">
 <div>📧 sales@aerotyre.com</div>
 <div>📱 +91XXXXXXXXXX</div>
 <div>📍 Chennai, India</div>
@@ -72,25 +103,24 @@
 <footer>
 <p>© 2026 AeroTyre & Brake Solutions | Chennai, India | Serving Worldwide</p>
 </footer>
-<!-- WHATSAPP FLOAT BUTTON -->
+
 <a href="https://wa.me/919600038089?text=Hello%20AeroTyre%20Team,%0A%0AAircraft%20Type:%0APart%20Number:%0AQuantity:%0ALocation:%0ARequired%20By:%0A%0AThis%20is%20an%20AOG:%20Yes/No"
    class="whatsapp"
    target="_blank">
 💬 24/7 AOG
 </a>
-    <script>
+
+<script>
 document.addEventListener("DOMContentLoaded", function() {
 
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
 
-    // Toggle menu
     hamburger.addEventListener("click", function() {
         navLinks.classList.toggle("active");
         hamburger.classList.toggle("open");
     });
 
-    // Auto close menu when link clicked (mobile)
     document.querySelectorAll("#nav-links a").forEach(link => {
         link.addEventListener("click", function() {
             navLinks.classList.remove("active");
@@ -101,10 +131,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-
 </body>
 </html>
-
-
-
-
