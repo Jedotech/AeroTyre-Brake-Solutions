@@ -110,26 +110,42 @@ body {
 }
 
 /* =========================
-   HERO
+   HERO (PREMIUM SPACING)
 ========================= */
 .hero {
-  padding: 110px 20px 130px;
+  padding: 150px 20px 170px;
   text-align: center;
   background: linear-gradient(135deg,#001f3f,#003366);
 }
 
 .hero.small {
-  padding: 90px 20px;
+  padding: 120px 20px;
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  margin-bottom: 32px;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 20px;
   color: #cbd5e1;
+  letter-spacing: 0.5px;
+  margin-bottom: 60px;
+}
+
+/* Optional subtle divider */
+.hero p::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #00d4ff;
+  margin: 30px auto 0;
+  opacity: 0.6;
 }
 
 /* =========================
@@ -137,12 +153,13 @@ body {
 ========================= */
 .btn {
   background: #00d4ff;
-  padding: 14px 34px;
+  padding: 18px 46px;
   color: black;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 40px;
   display: inline-block;
   font-weight: 600;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease;
@@ -156,13 +173,13 @@ body {
    SECTIONS
 ========================= */
 .section {
-  padding: 90px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
 .section h2 {
-  margin-bottom: 50px;
-  font-size: 30px;
+  margin-bottom: 60px;
+  font-size: 32px;
 }
 
 .dark {
@@ -222,16 +239,15 @@ body {
 }
 
 /* =========================
-   RFQ FORM (FIXED)
+   RFQ FORM
 ========================= */
-
 .rfq-container {
   max-width: 900px;
-  margin: 50px auto 0;
+  margin: 60px auto 0;
   background: #0f172a;
-  padding: 50px;
-  border-radius: 14px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
 }
 
 .rfq-form {
@@ -277,7 +293,7 @@ body {
 
 .rfq-form button {
   grid-column: 1 / -1;
-  margin-top: 20px;
+  margin-top: 30px;
   justify-self: center;
 }
 
@@ -285,7 +301,7 @@ body {
    FOOTER
 ========================= */
 footer {
-  padding: 25px;
+  padding: 30px;
   text-align: center;
   background: #0f1a2e;
   font-size: 14px;
@@ -308,10 +324,13 @@ footer {
   z-index: 9999;
 }
 
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
 /* =========================
    MOBILE
 ========================= */
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -353,12 +372,18 @@ footer {
     display: flex;
   }
 
+  .hero {
+    padding: 110px 20px 130px;
+  }
+
   .hero h1 {
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 1.25;
   }
 
   .hero p {
     font-size: 16px;
+    margin-bottom: 45px;
   }
 
   .rfq-form {
@@ -366,7 +391,7 @@ footer {
   }
 
   .rfq-container {
-    padding: 30px 20px;
+    padding: 35px 20px;
   }
 
 }
