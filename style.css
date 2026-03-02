@@ -492,4 +492,26 @@ button:hover {
 .main-nav ul {
     margin-left: 40px;
 }
+.main-nav {
+    background: #0f172a;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 25px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 22px;
+    margin-right: 60px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
 
