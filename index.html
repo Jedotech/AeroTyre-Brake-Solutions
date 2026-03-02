@@ -19,17 +19,29 @@
 
 <!-- MAIN NAVIGATION -->
 <nav class="main-nav">
-  <div class="logo">AeroTyre</div>
-  <ul>
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="tyres.html">Tyres</a></li>
-    <li><a href="brakes.html">Brakes</a></li>
-    <li><a href="aog.html" class="aog-link">AOG</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="contact.html" class="rfq-btn">RFQ</a></li>
-  </ul>
-</nav>
+    <div class="nav-container">
+        
+        <div class="logo">AeroTyre</div>
 
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tyres.html">Tyres</a></li>
+            <li><a href="brakes.html">Brakes</a></li>
+            <li><a href="aog.html" class="aog-link">AOG</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="rfq-btn">RFQ</a></li>
+        </ul>
+
+    </div>
+</nav>
 <!-- HERO SECTION -->
 <header class="hero">
   <h1>Global Aircraft Tyre & Brake Supplier</h1>
@@ -67,6 +79,29 @@
    target="_blank">
 💬 24/7 AOG
 </a>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    // Toggle menu
+    hamburger.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
+    });
+
+    // Auto close menu when link clicked (mobile)
+    document.querySelectorAll("#nav-links a").forEach(link => {
+        link.addEventListener("click", function() {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("open");
+        });
+    });
+
+});
+</script>
 
 </body>
 </html>
+
