@@ -489,4 +489,7 @@ button:hover {
     margin: 0;
     padding: 0;
 }
+.main-nav ul {
+    margin-left: 40px;
+}
 
